@@ -141,5 +141,44 @@
 		\end{framed}
 	\end{figure}
 	\section{\textbf{Prelab\#8}}
-	
+	We set the values for two capacitors separately and got the simulated plots for the three filters. We plotted the gain Bode plot for these three filters separately in figure[\ref{fig:8.1},\ref{fig:8.2},\ref{fig:8.3}]. And we used cursor to record the center frequency, cutoff frequency and gain(peak). These data were shown in table[\ref{tab:ACpara}].
+	\begin{figure}[!htbp]
+		\centering
+		\begin{framed}
+			\includegraphics[width=\linewidth]{images/8_1.PNG}
+			\caption{SPICE Bode plot for the first filter}
+			\label{fig:8.1}
+		\end{framed}
+	\end{figure}
+	\begin{figure}[!htbp]
+		\centering
+		\begin{framed}
+			\includegraphics[width=\linewidth]{images/8_2.PNG}
+			\caption{SPICE Bode plot for the second filter}
+			\label{fig:8.2}
+		\end{framed}
+	\end{figure}
+	\begin{figure}[!htbp]
+		\centering
+		\begin{framed}
+			\includegraphics[width=\linewidth]{images/8_3.PNG}
+			\caption{SPICE Bode plot for the third filter}
+			\label{fig:8.3}
+		\end{framed}
+	\end{figure}
+
+	\begin{table}[!htbp]
+		\centering
+		\caption{Some AC parameters for the three filters}
+		\begin{tabular}{lcccc}
+			\toprule
+			No &center freq($\si{\hertz}$) &cutoff freq1($\si{\hertz}$)&cutoff freq2($ \si{\hertz} $)&peak gain\\
+			\midrule
+			1	&281.22	&82.339	&943.02	&1.6443\\
+			2	&996.34	&319.73	&2538.7	&1.8781\\
+			3	&4013.3	&1411.5	&11000	&1.8872\\
+			\bottomrule
+		\end{tabular}
+		\label{tab:ACpara}
+	\end{table}	
 \end{document}
