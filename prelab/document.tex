@@ -56,6 +56,17 @@
 		& = & - \frac{102.4\omega - 300\mathrm{k}\mathbf{j}}{104.8\omega - 300\mathrm{k}\mathbf{j}}\\
 	\end{eqnarray*}
 	\subsection{the gain of the filter}
+	See figure[\ref{fig:3.1}].
+	
+	\begin{figure}[!htbp]
+		\centering
+		\begin{framed}
+			\includegraphics[width=\linewidth]{images/3_1.png}
+			\caption{Gain of the filter in prelab \#3}
+			\label{fig:3.1}
+		\end{framed}
+	\end{figure}
+
 	\subsection{the gain of the filter after switching $ R_3 $ and $ R_4 $}
 	After switching $ R_3 $ and $ R_4 $, we have\\
 	\begin{eqnarray*}
@@ -63,12 +74,24 @@
 		& = & - \frac{4800+100000-\frac{3\times10^8}{\omega}\mathbf{j}} {2400+100000-\frac{3\times10^8}{\omega}\mathbf{j}}\\
 		& = & - \frac{104.8\omega - 300\mathrm{k}\mathbf{j}}{102.4\omega - 300\mathrm{k}\mathbf{j}}\\
 	\end{eqnarray*}
+	See figure[\ref{fig:3.2}].
+	
+	\begin{figure}[!htbp]
+		\centering
+		\begin{framed}
+			\includegraphics[width=\linewidth]{images/3_2.png}
+			\caption{Gain after switching $ R_3 $ and $ R_4 $}
+			\label{fig:3.2}
+		\end{framed}
+	\end{figure}
+
 	\section{\textbf{Prelab\#4}}
 	Let $ H(s) $ be the frequency response of the filter, and let $ H^\prime(s) $ be the frequency response of the filter after switching $ R_3 $ and $ R_4 $, we have\\
 	\begin{equation*}
 		H(s)\cdot H^\prime(s) = 1
 	\end{equation*}
 	\phantom{ } So we can conclude that the type of the filter after switching $ R_3 $ and $ R_4 $ is just the opposite type of the filter before the two resistors are switched. For example, if the filter is low-pass, it will become high-pass; if the filter is high-pass, it will become low-pass; it the filter is band-pass, it will become band-stop.
+	
 	\section{\textbf{Prelab\#5}}
 	Let $ Z_1 = \gamma R_5 $, where $ 0 \le \gamma \le 1 $, we have $ Z_2 = (1-\gamma)R_5 $ and the following equations:\\
 	\begin{eqnarray*}
@@ -78,8 +101,45 @@
 		Z_b & = & \frac{\gamma R_5}{sR_5C_1+1}\\
 		Z_c & = & \frac{\gamma (1-\gamma)R_5^2sC_1}{sR_5C_1+1}\\
 	\end{eqnarray*}
+	Our schematic is shown in figure[].
+	
 	\section{\textbf{Prelab\#6}}
+	\begin{eqnarray*}
+		Z_3 & = & R_3 + Z_a\\
+		Z_4 & = & R_4 + Z_b\\
+		Z_5 & = & \frac{1}{sC_2} + Z_c\\
+		H(s) & = & - \frac{\frac{1}{R_3 + Z_a}+\frac{\frac{1}{sC_2} + Z_c}{Z_1} (\frac{1}{R_3 + Z_a}+\frac{1}{R_4 + Z_b}+\frac{1}{\frac{1}{sC_2} + Z_c})} {\frac{1}{R_4 + Z_b}+\frac{\frac{1}{sC_2} + Z_c}{Z_2}(\frac{1}{R_3 + Z_a}+\frac{1}{R_4 + Z_b}+\frac{1}{\frac{1}{sC_2} + Z_c})}
+	\end{eqnarray*}
 	\section{\textbf{Prelab\#7}}
+	\hfil \newline
+	\phantom{ } For 250$ \si{\hertz} $, we let $ C_1 = 0.1\mu\si{\farad} $, $ C_2 = 0.0050\mu\si{\farad} $.\\
+	\phantom{ } For 1$ \si{\kilo\hertz} $, we let $ C_1 = 0.022\mu\si{\farad} $, $ C_2 = 0.0022\mu\si{\farad} $.\\
+	\phantom{ } For 4$ \si{\kilo\hertz} $, we let $ C_1 = 0.0050\mu\si{\farad} $, $ C_2 = 500\si{\pico\farad} $.\\
+	\phantom{ } Our matlab result is shown in figure[\ref{fig:7.1},\ref{fig:7.2},\ref{fig:7.3}].
+	\begin{figure}[!htbp]
+		\centering
+		\begin{framed}
+			\includegraphics[width=\linewidth]{images/7_1.png}
+			\caption{band-pass filter with center frequency around 250Hz}
+			\label{fig:7.1}
+		\end{framed}
+	\end{figure}
+	\begin{figure}[!htbp]
+		\centering
+		\begin{framed}
+			\includegraphics[width=\linewidth]{images/7_2.png}
+			\caption{band-pass filter with center frequency around 400Hz}
+			\label{fig:7.2}
+		\end{framed}
+	\end{figure}
+	\begin{figure}[!htbp]
+		\centering
+		\begin{framed}
+			\includegraphics[width=\linewidth]{images/7_3.png}
+			\caption{band-pass filter with center frequency around 4kHz}
+			\label{fig:7.3}
+		\end{framed}
+	\end{figure}
 	\section{\textbf{Prelab\#8}}
-
+	
 \end{document}
