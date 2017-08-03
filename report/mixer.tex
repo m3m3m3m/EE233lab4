@@ -83,7 +83,7 @@ Next, we built the whole mixing console and tested it.
 \begin{figure}[!htbp]
 	\centering
 	\begin{framed}
-		\includegraphics[width=\linewidth]{images/mixerg.png}
+		\includegraphics[width=\linewidth]{images/ana5.png}
 		\caption{The gain of the audio mixer}
 		\label{fig:mixerg}
 	\end{framed}
@@ -91,3 +91,17 @@ Next, we built the whole mixing console and tested it.
 
 \hfill \newline
 \textbf{Analysis\#5} \newline
+According to the figure[\ref{fig:mixerg}], only one band could be found. The same result was found when we use SPICE to simulate circuit in figure[\ref{fig:fullcir}], shown as follows.
+
+\begin{figure}
+	\centering
+	\begin{framed}
+		\includegraphics[width=\linewidth]{images/bode_whole.png}
+		\caption{The Bode plot of the full circuit of mixer by SPICE simulator}
+		\label{fig:spice}
+	\end{framed}
+\end{figure}
+
+\hfill \newline
+\textbf{Analysis\#6} \newline
+\phantom{ } We can regard the overall $H(s)$ as a band-pass. There are three major parts in the system. The first summing amplifier adds up the input signals while behaves like a low-pass filter. The last summing amplifier, on the other hand, adds up three channels while behaves like a high-pass filter. In the middle, there is an adjustable equalizer that change the pass-or-not for a certain band. For the minor parts, the buffer is a voltage follower, separating the major parts to not interfere with each other. The preamplifier for the microphone input amplifies the week signal from the microphone, stopping low frequency noises to make the signal stable.  
