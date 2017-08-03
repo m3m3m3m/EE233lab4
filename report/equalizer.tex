@@ -247,4 +247,143 @@ To make sure that those circuits works well as band-pass. We measured the freque
 	\end{tabular}
 \end{table}
 
+\hfill \newline
+\textbf{Analysis\#2} \newline
+\phantom{ } According to the gain we measured, we then drew the plots to show that those circuits did work as adjustable band-pass and band-stop. 
+\subsection{Set the potentiometer to $25\%$}
+For the potentiometer at $25\%$, the plots are figure[\ref{fig:plot00},\ref{fig:plot01},\ref{fig:plot02}]. Using the plots, we figured out those constants of the filter in table[\ref{tab:cnst0}]. We can say that the filter is a band-pass filter, and the capacitors and resistor we used were good choices to achieve this function.
 
+\begin{table}[!htbp]
+	\centering
+	\caption{Constants of the filter with potentiometer at $25\%$}
+	\label{tab:cnst0}
+	\begin{tabular}{ccc}
+		\toprule
+		center frequency($\si{\hertz}$) & $3-\si{\decibel}$ frequency($\si{\hertz}$) & maximum gain($\si{\decibel}$) \\
+		theoretical and actual & left and right & or minimum\\
+		\midrule
+		250 | NA & NA | NA & 0.4454\\
+		1000 | NA & NA | NA & 0.5654\\
+		4000 | NA & NA | NA & 0.7558\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\begin{figure}
+	\centering
+	\begin{framed}
+		\includegraphics[width=\linewidth]{images/00.PNG}
+		\caption{Plot of $25\%$ - $250\si{\hertz}$}
+		\label{fig:plot00}
+	\end{framed}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\begin{framed}
+		\includegraphics[width=\linewidth]{images/01.PNG}
+		\caption{Plot of $25\%$ - $1\si{\kilo\hertz}$}
+		\label{fig:plot01}
+	\end{framed}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\begin{framed}
+		\includegraphics[width=\linewidth]{images/02.PNG}
+		\caption{Plot of $25\%$ - $4\si{\kilo\hertz}$}
+		\label{fig:plot02}
+	\end{framed}
+\end{figure}
+
+\subsection{Set the potentiometer to $50\%$}
+For the potentiometer at $50\%$, the plots are figure[\ref{fig:plot10},\ref{fig:plot11},\ref{fig:plot12}]. Using the plots, we figured out those constants of the filter in table[\ref{tab:cnst1}]. Notice that \textit{NA} takes the place of an unavailable figure. We can say that the circuits are neither band-passes nor band-stops. Moreover, it was hard to find their center frequencies.
+
+\begin{table}[!htbp]
+	\centering
+	\caption{Constants of the filter with potentiometer at $50\%$}
+	\label{tab:cnst1}
+	\begin{tabular}{ccc}
+		\toprule
+		center frequency($\si{\hertz}$) & $3-\si{\decibel}$ frequency($\si{\hertz}$) & maximum gain($\si{\decibel}$) \\
+		theoretical and actual & left and right & or minimum\\
+		\midrule
+		250 | 319.38 & 66.49 | 1162.04 & 4.235\\
+		1000 | 822.60 & 221.04 | 2796.96 & 5.185\\
+		4000 | 3411.79 & 663.79 | 9339.89 & 4.178\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\begin{figure}
+	\centering
+	\begin{framed}
+		\includegraphics[width=\linewidth]{images/10.PNG}
+		\caption{Plot of $50\%$ - $250\si{\hertz}$}
+		\label{fig:plot10}
+	\end{framed}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\begin{framed}
+		\includegraphics[width=\linewidth]{images/11.PNG}
+		\caption{Plot of $50\%$ - $1\si{\kilo\hertz}$}
+		\label{fig:plot11}
+	\end{framed}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\begin{framed}
+		\includegraphics[width=\linewidth]{images/12.PNG}
+		\caption{Plot of $50\%$ - $4\si{\kilo\hertz}$}
+		\label{fig:plot12}
+	\end{framed}
+\end{figure}
+
+\subsection{Set the potentiometer to $75\%$}
+For the potentiometer at $75\%$, the plots are figure[\ref{fig:plot20},\ref{fig:plot21},\ref{fig:plot22}]. Using the plots, we figured out those constants of the filter in table[\ref{tab:cnst2}]. Notice that \textit{NA} represents not available and we actually used the minimum gain to describe the band-stop. We can say that the filter is a band-stop filter, proving again that the capacitors and resistor we used were good choices.
+
+\begin{table}[!htbp]
+	\centering
+	\caption{Constants of the filter with potentiometer at $25\%$}
+	\label{tab:cnst2}
+	\begin{tabular}{ccc}
+		\toprule
+		center frequency($\si{\hertz}$) & $3-\si{\decibel}$ frequency($\si{\hertz}$) & maximum gain($\si{\decibel}$) \\
+		theoretical and actual & left and right & or minimum\\
+		\midrule
+		250 | 311.54 & NA | NA & -2.685\\
+		1000 | 868.40 & 43.00 | 3290.73 & -5.579\\
+		4000 | 3173.96 & NA | NA & -3.196\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\begin{figure}
+	\centering
+	\begin{framed}
+		\includegraphics[width=\linewidth]{images/20.PNG}
+		\caption{Plot of $75\%$ - $250\si{\hertz}$}
+		\label{fig:plot20}
+	\end{framed}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\begin{framed}
+		\includegraphics[width=\linewidth]{images/21.PNG}
+		\caption{Plot of $75\%$ - $1\si{\kilo\hertz}$}
+		\label{fig:plot21}
+	\end{framed}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\begin{framed}
+		\includegraphics[width=\linewidth]{images/22.PNG}
+		\caption{Plot of $75\%$ - $4\si{\kilo\hertz}$}
+		\label{fig:plot22}
+	\end{framed}
+\end{figure}
