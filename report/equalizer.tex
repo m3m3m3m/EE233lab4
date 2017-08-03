@@ -26,11 +26,11 @@
 	\label{tab:chos}
 \end{table}
 
-To make sure that those circuits works well as band-pass. We measured the frequency response of the gain of each circuit, in the 1-2-5 method, from $10\si{\hertz}$ to $5\si{\kilo\hertz}$. The results are displayed in table[\ref{tab:data00},\ref{tab:data01},\ref{tab:data02},\ref{tab:data10},\ref{tab:data11},\ref{tab:data12},\ref{tab:data20},\ref{tab:data21},tab:data22}]
+To make sure that those circuits works well as band-pass. We measured the frequency response of the gain of each circuit, in the 1-2-5 method, from $10\si{\hertz}$ to $5\si{\kilo\hertz}$. The results are displayed in table[\ref{tab:data00},\ref{tab:data01},\ref{tab:data02},\ref{tab:data10},\ref{tab:data11},\ref{tab:data12},\ref{tab:data20},\ref{tab:data21},\ref{tab:data22}].
 
 \begin{table}[!htbp]
 	\centering
-	\caption{$Measurments of 25\%$ - $250\si{\hertz}$}
+	\caption{Measurements of $25\%$ - $250\si{\hertz}$}
 	\label{tab:data00}
 	\begin{tabular}{lccc}
 		\toprule
@@ -54,7 +54,7 @@ To make sure that those circuits works well as band-pass. We measured the freque
 
 \begin{table}[!htbp]
 	\centering
-	\caption{$Measurments of 25\%$ - $1\si{\kilo\hertz}$}
+	\caption{Measurements of $25\%$ - $1\si{\kilo\hertz}$}
 	\label{tab:data01}
 	\begin{tabular}{lccc}
 		\toprule
@@ -78,24 +78,173 @@ To make sure that those circuits works well as band-pass. We measured the freque
 
 \begin{table}[!htbp]
 	\centering
-	\caption{$Measurments of 25\%$ - $1\si{\kilo\hertz}$}
-	\label{tab:data01}
+	\caption{Measurements of $25\%$ - $4\si{\kilo\hertz}$}
+	\label{tab:data02}
 	\begin{tabular}{lccc}
 		\toprule
 		frequency($\si{\hertz}$) & $V_{in}$($\si{\milli\volt}$) & $V_{out}$($\si{\milli\volt}$) & gain($\si{\decibel}$) \\
 		\midrule
-		10&	224&	232&	0.305\\
-		20&	228&	228&	0.000\\
-		50&	220&	224&	0.157\\
-		100&	224&	236&	0.453\\
-		200&	220&	268&	1.714\\
-		500&	220&	384&	4.838\\
-		1000&	224&	428&	5.624\\
-		2000&	228&	324&	3.052\\
-		5000&	228&	246&	0.660\\
-		10000&	232&	232&	0.000\\
-		20000&	236&	236&	0.000\\
-		50000&	232&	240&	0.294\\
+		10&	220&	228&	0.310\\
+		20&	224&	224&	0.000\\
+		50&	224&	228&	0.154\\
+		100&	220&	232&	0.461\\
+		200&	224&	240&	0.599\\
+		500&	224&	244&	0.743\\
+		1000&	228&	280&	1.784\\
+		2000&	228&	356&	3.870\\
+		5000&	228&	392&	4.707\\
+		10000&	228&	232&	0.151\\
+		20000&	228&	228&	0.000\\
+		50000&	228&	224&	-0.154\\
 		\bottomrule
 	\end{tabular}
 \end{table}
+
+
+\begin{table}[!htbp]
+	\centering
+	\caption{Measurements of $50\%$ - $250\si{\hertz}$}
+	\label{tab:data10}
+	\begin{tabular}{lccc}
+		\toprule
+		frequency($\si{\hertz}$) & $V_{in}$($\si{\milli\volt}$) & $V_{out}$($\si{\milli\volt}$) & gain($\si{\decibel}$) \\
+		\midrule
+		10&	228&	232&	0.151\\
+		20&	220&	232&	0.461\\
+		50&	220&	232&	0.461\\
+		100&	236&	232&	-0.148\\
+		200&	232&	232&	0.000\\
+		500&	220&	232&	0.461\\
+		1000&	236&	240&	0.146\\
+		2000&	226&	240&	0.522\\
+		5000&	232&	236&	0.148\\
+		10000&	232&	208&	-0.948\\
+		20000&	244&	192&	-2.082\\
+		50000&	240&	192&	-1.938\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\begin{table}[!htbp]
+	\centering
+	\caption{Measurements of $50\%$ - $1\si{\kilo\hertz}$}
+	\label{tab:data11}
+	\begin{tabular}{lccc}
+		\toprule
+		frequency($\si{\hertz}$) & $V_{in}$($\si{\milli\volt}$) & $V_{out}$($\si{\milli\volt}$) & gain($\si{\decibel}$) \\
+		\midrule
+		10&	220&	232&	0.461\\
+		20&	236&	232&	-0.148\\
+		50&	232&	228&	-0.151\\
+		100&	228&	232&	0.151\\
+		200&	224&	228&	0.154\\
+		500&	232&	244&	0.438\\
+		1000&	220&	232&	0.461\\
+		2000&	220&	236&	0.610\\
+		5000&	224&	236&	0.453\\
+		10000&	232&	204&	-1.117\\
+		20000&	240&	216&	-0.915\\
+		50000&	232&	196&	-1.465\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\begin{table}[!htbp]
+	\centering
+	\caption{Measurements of $50\%$ - $4\si{\kilo\hertz}$}
+	\label{tab:data12}
+	\begin{tabular}{lccc}
+		\toprule
+		frequency($\si{\hertz}$) & $V_{in}$($\si{\milli\volt}$) & $V_{out}$($\si{\milli\volt}$) & gain($\si{\decibel}$) \\
+		\midrule
+		10&	220&	240&	0.756\\
+		20&	240&	228&	-0.446\\
+		50&	228&	224&	-0.154\\
+		100&	224&	228&	0.154\\
+		200&	232&	236&	0.148\\
+		500&	220&	240&	0.756\\
+		1000&	232&	236&	0.148\\
+		2000&	248&	252&	0.139\\
+		5000&	232&	240&	0.294\\
+		10000&	228&	192&	-1.493\\
+		20000&	244&	220&	-0.899\\
+		50000&	248&	200&	-1.868\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+
+\begin{table}[!htbp]
+	\centering
+	\caption{Measurements of $75\%$ - $250\si{\hertz}$}
+	\label{tab:data20}
+	\begin{tabular}{lccc}
+		\toprule
+		frequency($\si{\hertz}$) & $V_{in}$($\si{\milli\volt}$) & $V_{out}$($\si{\milli\volt}$) & gain($\si{\decibel}$) \\
+		\midrule
+		10&	228&	224&	-0.154\\
+		20&	220&	228&	0.310\\
+		50&	220&	224&	0.157\\
+		100&	220&	192&	-1.182\\
+		200&	220&	160&	-2.766\\
+		500&	224&	164&	-2.708\\
+		1000&	240&	200&	-1.584\\
+		2000&	224&	224&	0.000\\
+		5000&	248&	228&	-0.730\\
+		10000&	236&	192&	-1.792\\
+		20000&	232&	216&	-0.621\\
+		50000&	232&	224&	-0.305\\
+		
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\begin{table}[!htbp]
+	\centering
+	\caption{Measurements of $75\%$ - $1\si{\kilo\hertz}$}
+	\label{tab:data21}
+	\begin{tabular}{lccc}
+		\toprule
+		frequency($\si{\hertz}$) & $V_{in}$($\si{\milli\volt}$) & $V_{out}$($\si{\milli\volt}$) & gain($\si{\decibel}$) \\
+		\midrule
+		10&	232&	220&	-0.461\\
+		20&	220&	208&	-0.487\\
+		50&	232&	162&	-3.119\\
+		100&	224&	134&	-4.463\\
+		200&	236&	124&	-5.590\\
+		500&	224&	120&	-5.421\\
+		1000&	232&	120&	-5.726\\
+		2000&	232&	132&	-4.898\\
+		5000&	240&	224&	-0.599\\
+		10000&	232&	228&	-0.151\\
+		20000&	232&	228&	-0.151\\
+		50000&	228&	228&	0.000\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\begin{table}[!htbp]
+	\centering
+	\caption{Measurements of $75\%$ - $4\si{\kilo\hertz}$}
+	\label{tab:data22}
+	\begin{tabular}{lccc}
+		\toprule
+		frequency($\si{\hertz}$) & $V_{in}$($\si{\milli\volt}$) & $V_{out}$($\si{\milli\volt}$) & gain($\si{\decibel}$) \\
+		\midrule
+		10&	244&	232&	-0.438\\
+		20&	220&	212&	-0.322\\
+		50&	232&	220&	-0.461\\
+		100&	220&	204&	-0.656\\
+		200&	220&	196&	-1.003\\
+		500&	224&	196&	-1.160\\
+		1000&	220&	170&	-2.239\\
+		2000&	220&	152&	-3.212\\
+		5000&	224&	154&	-3.255\\
+		10000&	236&	188&	-1.975\\
+		20000&	232&	212&	-0.783\\
+		50000&	232&	228&	-0.151\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+
